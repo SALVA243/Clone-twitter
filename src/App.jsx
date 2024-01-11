@@ -1,4 +1,9 @@
 import { useState } from 'react'
+import SideBar from "./components/SideBar"
+import Header from "./components/Header"
+import Publication from "./components/Publication"
+import Twitte from "./components/Twitte"
+import Trends from "./components/Trends"
 
 import './App.css'
 
@@ -7,20 +12,15 @@ function App() {
 
   return (
     <>
-      <div className='principal_container bg-slate-400 m-8 flex flex-row w-3/4 m-auto'>
-        <div className='left_container bg-neutral-500 basis-1/4'>
-          <img src="src/images/Vector.svg" alt="logo twitter" />
+      <div className='bg-transparent grid grid-cols-12 w-8/12 m-auto gap-4 h-full'>
+        <SideBar />
+        <div className='container_midle bg-orange-400 col-span-5 h-full'>
+          <Header />
+          <Publication />
+          <Twitte />
         </div>
-        <div className='mindle_container bg-orange-400 basis-1/2'>
-          <header> <div>HOME</div><div>✨</div> </header>
-          <section>
-          </section>
-        </div>
-        <div className='right_container bg-lime-400 basis-1/4' >
-          <div className='rounded-full'>
-            <img src="src/images/Search-Icon.svg" alt="icon recherche" />
-            <p>Search twitter</p>
-          </div>
+        <div className='container_right bg-lime-400 col-span-4' >
+          <Trends />
         </div>
       </div>
     </>
