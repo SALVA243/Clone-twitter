@@ -3,11 +3,10 @@ export default function Publication() {
     return (
         <>
 
-            <div className='flex flex-row justify-around border-solid border-2 border-yellow-500 '>
-                <div className="w-1/6 border-solid border-2 border-green-500">
-                    <img src="src/images/pingouin-anime-dessin-anime-ecouteurs.jpg" alt="User Image" className='rounded-full size-10' />
-                </div>
-                <div className="border-solid border-2 border-blue-500">
+            <div className='flex flex-row justify-start justify-items-start border-solid border-2 border-yellow-500 h-36'>
+                <img className="w-1/12 h-16  border-solid border-2 border-red-500 " src="src/images/Profile-Photo2.svg" alt="User Image" />
+
+                <div className="ms-2 border-solid border-2 border-blue-500 w-11/12">
                     <div>
                         <input type="text" placeholder="what's happing ?" />
                     </div>

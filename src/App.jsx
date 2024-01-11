@@ -12,14 +12,14 @@ function App() {
 
   return (
     <>
-      <div className='bg-transparent grid grid-cols-12 w-8/12 m-auto gap-4 h-full'>
+      <div className='bg-transparent grid grid-cols-12 w-8/12 m-auto gap-4 '>
         <SideBar />
-        <div className='container_midle bg-orange-400 col-span-5 h-full'>
+        <div className='container_midle bg-orange-400 col-span-6'>
           <Header />
           <Publication />
           <Twitte />
         </div>
-        <div className='container_right bg-lime-400 col-span-4' >
+        <div className='container_right bg-lime-400 col-span-3' >
           <Trends />
         </div>
       </div>
