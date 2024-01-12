@@ -8,7 +8,7 @@ export default function Twitte() {
                     <img className="w-full" src="src/images/Profile-Photo.svg" alt="" />
                 </div>
 
-                <div className='ms-2 bg-neutral-500 w-10/12 border-solid border-2 border-yellow-500' >
+                <div className='ms-2 w-10/12 border-solid border-2 border-yellow-500' >
 
                     <div className='flex flex-row border-solid border-2 border-red-500 '>
                         <label className='w-1/6 border-solid border-2 border-green-500' htmlFor="">CNN</label>
