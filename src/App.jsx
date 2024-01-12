@@ -8,8 +8,6 @@ import Trends from "./components/Trends"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='bg-transparent grid grid-cols-12 w-8/12 m-auto gap-4 '>
