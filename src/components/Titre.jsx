@@ -1,4 +1,4 @@
-export default function Titre({ stylerdiv, styleSpan1, titleSpan1, stylerImage, src, styleSpan2, titleSpan2 }) {
+export default function Titre({ stylerdiv, styleSpan1, titleSpan1, stylerImage, src, styleSpan2, titleSpan2, date }) {
 
     return (
         <>
@@ -6,6 +6,7 @@ export default function Titre({ stylerdiv, styleSpan1, titleSpan1, stylerImage, 
                 <span className={styleSpan1}>{titleSpan1}</span>
                 <img src={src} alt="" />
                 <span className={styleSpan2}>{titleSpan2}</span>
+                <span>{date}</span>
             </div>
         </>
     )
