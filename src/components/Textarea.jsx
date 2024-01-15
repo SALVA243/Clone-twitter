@@ -1,8 +1,8 @@
-export default function Textarea({ styler, name, id, cols, rows, texte }) {
+export default function Paragraphe({ styler, texte }) {
 
     return (
         <>
-            <textarea className={styler} name="" id="" cols={cols} rows={rows}>{texte}</textarea>
+            <p className={styler} >{texte}</p>
         </>
     )
 }

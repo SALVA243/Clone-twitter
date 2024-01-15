@@ -5,7 +5,7 @@ export default function Publication() {
     return (
         <>
 
-            <div className='flex flex-row justify-start justify-items-start border-solid border border-gray-300 h-36 px-2'>
+            <div className='flex justify-start justify-items-start border-solid border border-gray-300 h-36 px-2'>
                 <Profile stylerdiv='h-16 m-0' stylerImage='w-full size-16' src="src/images/Profile-Photo2.svg" />
                 <div className="ms-1 w-full mb-3">
                     <textarea className="bg-transparent h-4/5 w-full m-0 resize-none" name="" id="" cols="30" rows="2" placeholder="what's happing ?"></textarea>

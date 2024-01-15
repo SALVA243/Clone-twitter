@@ -129,7 +129,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-transparent grid grid-cols-12 w-8/12 m-auto gap-4 '>
+      <div className='bg-transparent grid grid-cols-12 w-8/12 mx-auto gap-4'>
         <SideBar />
         <div className='container_midle col-span-6'>
           <Header />
@@ -137,12 +137,6 @@ function App() {
           {
             (Tabtwitte.map((tab) => <Twitte twitte={tab} />))
           }
-          {/* <Twitte srcprofile="src/images/Profile-Photo.svg" styleSpan1='w-9' titleSpan1="CNN" titleSpan2="@CNN" date='7m' texte="President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a |'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis." rows='5' />
-          <Twitte srcprofile="src/images/TwitteProfil.svg" titleSpan1="The New York Times" titleSpan2="@nytimes" date='24m' texte="Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land" phototwitte="src/images/twittePhoto1.png" rows='3' />
-
-          <Twitte srcprofile="src/images/ProfileTwitter.svg" titleSpan1="Twitter" titleSpan2="@Twitter" date='7m' texte="BIG NEWS lol jk still Twitter" rows='2' />
-          <Twitte srcprofile="src/images/ProfileTwitter.svg" titleSpan1="Twitter" titleSpan2="@Twitter" date='7m' texte="hello literally everyone" rows='2' />
-          <Twitte srcprofile="src/images/ProfileTwitter.svg" titleSpan1="Twitter" titleSpan2="@Twitter" date='24m' texte="hello literally everyone" phototwitte="src/images/twittePhoto1.png" rows='2' /> */}
         </div>
         <div className='container_right col-span-3' >
           <Trends />
