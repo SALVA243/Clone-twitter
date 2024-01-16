@@ -1,4 +1,4 @@
-export default function Titre({ stylerdiv, styleSpan1, titleSpan1, stylerImage, src, styleSpan2, titleSpan2, date }) {
+export default function Titre({ stylerdiv, styleSpan1, titleSpan1, src, styleSpan2, titleSpan2, date }) {
 
     return (
         <>

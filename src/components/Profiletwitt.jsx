@@ -1,4 +1,4 @@
-export default function Profile({ stylerdiv, stylerImage, src }) {
+export default function Profiletwitt({ stylerdiv, stylerImage, src }) {
 
     return (
         <>

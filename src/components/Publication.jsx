@@ -1,4 +1,4 @@
-import Profile from "./Profile"
+import Profile from "./Profiletwitt"
 
 export default function Publication() {
 
