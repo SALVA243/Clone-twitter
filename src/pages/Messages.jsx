@@ -1,9 +1,7 @@
 import React from 'react';
-import Menu from '../components/Menu';
-function Messages(props) {
+function Messages() {
     return (
         <div>
-            <Menu />
             <h2>Messages</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatum repellendus consequatur harum repellat, ipsam aut tenetur enim esse facere corporis. Accusamus, eligendi hic corporis esse dolores animi unde facilis.</p>
         </div>
