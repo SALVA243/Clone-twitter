@@ -131,14 +131,14 @@ function App() {
     <>
       <div className='bg-transparent grid grid-cols-12 w-9/12 mx-auto gap-4'>
         <SideBar />
-        <div className='container_midle col-span-6'>
+        <div className='col-span-6'>
           <Header />
           <Publication />
           {
             (Tabtwitte.map((tab) => <Twitte twitte={tab} />))
           }
         </div>
-        <div className='container_right col-span-3' >
+        <div className='col-span-3' >
           <Trends />
         </div>
       </div>
