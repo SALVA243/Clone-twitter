@@ -6,20 +6,20 @@ export default function Menu() {
             <div>
                 <ul>
                     <NavLink to='/'>
-                        <div className="hover:bg-gray-200 w-28">
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
                             <img src="" alt="" />
                             <li>Home</li>
                         </div>
 
                     </NavLink>
                     <NavLink to='/Explore'>
-                        <div className="hover:bg-gray-200 w-28">
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
                             <img src="" alt="" />
                             <li>Explore</li>
                         </div>
                     </NavLink>
                     <NavLink to='/Notifications'>
-                        <div className="hover:bg-gray-200 w-28">
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
                             <img src="" alt="" />
                             <li>Notifications</li>
                         </div>
