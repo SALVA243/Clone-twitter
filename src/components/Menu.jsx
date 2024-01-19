@@ -6,28 +6,53 @@ export default function Menu() {
             <div>
                 <ul>
                     <NavLink to='/'>
-                        <li>Home</li>
+                        <div className="hover:bg-gray-200 w-28">
+                            <img src="" alt="" />
+                            <li>Home</li>
+                        </div>
+
                     </NavLink>
                     <NavLink to='/Explore'>
-                        <li>Explore</li>
+                        <div className="hover:bg-gray-200 w-28">
+                            <img src="" alt="" />
+                            <li>Explore</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/Notifications'>
-                        <li>Notifications</li>
+                        <div className="hover:bg-gray-200 w-28">
+                            <img src="" alt="" />
+                            <li>Notifications</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/Messages'>
-                        <li>Messages</li>
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
+                            <img src="" alt="" />
+                            <li>Messages</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/Bookmarks'>
-                        <li>Bookmarks</li>
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
+                            <img src="" alt="" />
+                            <li>Bookmarks</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/Lists'>
-                        <li>Lists</li>
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
+                            <img src="" alt="" />
+                            <li>Lists</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/Profile'>
-                        <li>Profile</li>
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
+                            <img src="" alt="" />
+                            <li>Profile</li>
+                        </div>
                     </NavLink>
                     <NavLink to='/More'>
-                        <li>More</li>
+                        <div className="hover:bg-gray-200 w-28 rounded-full">
+                            <img src="" alt="" />
+                            <li>More</li>
+                        </div>
                     </NavLink>
                 </ul>
             </div>

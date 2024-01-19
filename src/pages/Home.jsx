@@ -124,13 +124,12 @@ const Tabtwitte = [
 function Home() {
     return (
         <div>
-            <Header />
+            <Header titrePage='Home' />
             <Publication />
             {
                 (Tabtwitte.map((tab) => <Twitte twitte={tab} />))
             }
         </div>
-
     );
 }
 
