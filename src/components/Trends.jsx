@@ -1,37 +1,36 @@
 import Follow from "./Follow"
-import TrendsforYouSQuid from "./TrendsforYouSQuid"
+// import TrendsforYouSQuid from "./TrendsforYouSQuid"
+import Menu from '../components/Menu';
+import TrendsFor from './TrendsFor';
 
 
 export default function Trends() {
     return (
         <>
-            <div className="fixed top-0">
-                <div className='rounded-full bg-zinc-400 flex'>
-                    <img src="src/images/Search.svg" alt="icon recherche" />
-                    <p>Search twitter</p>
-                </div>
-                <div className='TrendsforYou rounded-full bg-zinc-400 flex'>
-                    <div>
-                        <span>Trend for You</span>
-                        <img src="src/images/setting.svg" alt="" />
-                        <TrendsforYouSQuid />
-                        <TrendsforYouSQuid />
-                        <TrendsforYouSQuid />
-                        <button>Shore more</button>
+            <div className='col-span-3' >
+                <div className='fixed h-full w-96 grid grid-rows-4 gap-4'>
+                    <div className='bg-zinc-400 flex rounded-xl h-12'>
+                        <img className='w-6 h-6' src="src/images/Search.svg" alt="icon recherche" />
+                        <span>Search twitter</span>
                     </div>
-                    <div>
+                    <TrendsFor />
+                    <div className="bg-zinc-400 px-4 rounded-xl">
                         <span>Who follow me</span>
                         <Follow />
                         <button>Shore more</button>
                     </div>
-                    <div>
-                        <span>Terms of Service</span>
-                        <span>Privaxy Policy</span>
-                        <span>Cookie Policy</span>
-                        <span>Imprint</span>
-                        <span>More...</span>
-                        <span>2021 twitter,inc.</span>
-
+                    <div className="bg-transparent px-8">
+                        <div>
+                            <span>Terms of Service</span>
+                            <span>Privaxy Policy</span>
+                            <span>Cookie Policy</span>
+                        </div>
+                        <div>
+                            <span>Imprint</span>
+                            <span>Ads Info</span>
+                            <span>More...</span>
+                            <span>2021 twitter,inc.</span>
+                        </div>
                     </div>
                 </div>
             </div>

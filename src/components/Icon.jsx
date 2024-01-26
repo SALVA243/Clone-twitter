@@ -1,7 +1,5 @@
 import LikerIconNbre from "./LikerIconNbre"
 
-
-
 export default function Icon({ stylerdiv, stylerdiv1, src1, nbre1, stylerdiv2, src2, nbre2, stylerdiv3, stylerdiv4, src4 }) {
 
     return (

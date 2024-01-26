@@ -31,9 +31,7 @@ function App() {
             </Routes>
           </nav>
         </div>
-        <div className='col-span-3' >
-          <Trends />
-        </div>
+        <Trends />
       </div>
     </>
   )

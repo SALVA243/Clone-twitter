@@ -2,7 +2,6 @@ import Icon from "./Icon.jsx"
 import Profiletwitt from "./Profiletwitt.jsx"
 import Paragraphe from "./Paragraphe.jsx"
 import Titre from "./Titre.jsx"
-import { useState } from "react"
 
 // import{BsFillHeartFill,BsHeart} from "react-icond/bs"
 
