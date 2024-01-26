@@ -1,5 +1,3 @@
-import TrendsforYouSQuid from "./TrendsforYouSQuid"
-
 export default function TrendsFor() {
     return (
         <>
@@ -9,9 +7,30 @@ export default function TrendsFor() {
                         <span>Trend for You</span>
                         <img className='w-12' src="src/images/setting.svg" alt="" />
                     </div>
-                    <TrendsforYouSQuid />
-                    <TrendsforYouSQuid />
-                    <TrendsforYouSQuid />
+                    <div className="">
+                        <span >Trending in Turkey</span>
+                        <span>#SQUID</span>
+                        <div>
+                            <span>2,066</span>
+                            <span>Tweets</span>
+                        </div>
+                    </div>
+                    <div className="">
+                        <span >Trending in Turkey</span>
+                        <span>#SQUID</span>
+                        <div>
+                            <span>2,066</span>
+                            <span>Tweets</span>
+                        </div>
+                    </div>
+                    <div className="">
+                        <span >Trending in Turkey</span>
+                        <span>#SQUID</span>
+                        <div>
+                            <span>2,066</span>
+                            <span>Tweets</span>
+                        </div>
+                    </div>
                     <button>Shore more</button>
                 </div>
             </div>
