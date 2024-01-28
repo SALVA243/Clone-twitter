@@ -1,7 +1,10 @@
-import React from 'react';
+import { useState } from "react";
 import Header from "../components/Header"
 import Publication from "../components/Publication"
 import Twitte from "../components/Twitte"
+import axios from 'axios';
+import { useEffect } from "react";
+
 
 const Tabtwitte = [
     {
@@ -121,13 +124,29 @@ const Tabtwitte = [
     }
 ]
 
+
+
+
 function Home() {
+
+
+    const [Tabtwitter, setTabtwitter] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://my-json-server.typicode.com/amare53/twiterdb/posts')
+            .then((response) => { setTabtwitter(response.data) })
+            .catch((err) => {
+                console.log(err);
+            })
+        console.log(Tabtwitter)
+    }, [])
+
     return (
         <div>
             <Header titrePage='Home' />
             <Publication />
             {
-                (Tabtwitte.map((tab) => <Twitte twitte={tab} />))
+                (Tabtwitter.map((tab) => <Twitte twitte={tab} />))
             }
         </div>
     );

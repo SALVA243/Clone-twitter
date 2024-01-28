@@ -8,13 +8,13 @@ export default function Trends() {
     return (
         <>
             <div className='col-span-3' >
-                <div className='fixed h-full w-96 grid grid-rows-4 gap-4'>
+                <div className='fixed h-full w-96 flex flex-col gap-4'>
                     <div className='bg-zinc-400 flex rounded-xl h-12'>
                         <img className='w-6 h-6' src="src/images/Search.svg" alt="icon recherche" />
                         <span>Search twitter</span>
                     </div>
                     <TrendsFor />
-                    <div className="bg-zinc-400 px-4 rounded-xl">
+                    <div className="bg-zinc-400 px-4 rounded-xl h-60">
                         <span>Who follow me</span>
                         <Follow />
                         <button>Shore more</button>
