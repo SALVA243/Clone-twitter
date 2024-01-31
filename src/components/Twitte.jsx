@@ -10,7 +10,7 @@ export default function Twitte({ twitte, styleSpan1 }) {
     const [TabUser, setTabUser] = useState([]);
 
     useEffect(() => {
-        axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users/1' + twitte.userId)
+        axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users/' + twitte.userId)
             .then((response) => { setTabUser(response.data) })
             .catch((err) => {
                 console.log(`Error + ${err}`);

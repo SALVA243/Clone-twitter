@@ -128,9 +128,28 @@ function Home() {
 
     const [Tabtwitter, setTabtwitter] = useState([]);
 
+    // try {
+
+    // } catch (error) {
+
+    // }
+
     useEffect(() => {
-        axios.get('https://my-json-server.typicode.com/amare53/twiterdb/posts')
-            .then((response) => { setTabtwitter(response.data) })
+        axios.all([
+            axios.get('https://my-json-server.typicode.com/amare53/twiterdb/posts'),
+            axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users')
+        ])
+            // .then((response) => { setTabtwitter(response.data) })
+
+            .then(
+                axios.spread((posts, users) => {
+
+                    setTabtwitter(posts.data);
+
+                })
+
+            )
+
             .catch((err) => {
                 console.log(`Error + ${err}`);
             })
