@@ -1,19 +1,27 @@
+import { useEffect, useState } from "react";
 import Icon from "./Icon.jsx"
 import Profiletwitt from "./Profiletwitt.jsx"
 import Paragraphe from "./Paragraphe.jsx"
 import Titre from "./Titre.jsx"
-
-// import{BsFillHeartFill,BsHeart} from "react-icond/bs"
+import axios from "axios";
 
 export default function Twitte({ twitte, styleSpan1 }) {
 
-    //    const LikeIcon=state ? BsFillHeartFill :BsHeart
+    const [TabUser, setTabUser] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users/1' + twitte.userId)
+            .then((response) => { setTabUser(response.data) })
+            .catch((err) => {
+                console.log(`Error + ${err}`);
+            })
+    }, [])
 
     return (
         <>
             <section className='flex border-solid border border-gray-300 px-2 '>
 
-                <Profiletwitt stylerdiv='h-16 m-0' stylerImage='w-full size-16 rounded-full' src={twitte.url} />
+                <Profiletwitt stylerdiv='h-16 m-0' stylerImage='w-full size-16 rounded-full' src={TabUser.thumbnailProfil} />
                 <div className='ms-2 w-full mb-0.5' >
                     <Titre stylerdiv='flex' styleSpan1={styleSpan1} titleSpan1={twitte.title} src='src/images/bagdgetPro.svg' styleSpan2='text-slate-400 me-2' titleSpan2={twitte.source} date={twitte.date} />
                     <Paragraphe styler='bg-transparent' texte={twitte.text} />

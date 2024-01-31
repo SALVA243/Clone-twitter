@@ -5,7 +5,6 @@ import Twitte from "../components/Twitte"
 import axios from 'axios';
 import { useEffect } from "react";
 
-
 const Tabtwitte = [
     {
         "author_avatar": "https://picsum.photos/200?random=1604299903000",
@@ -125,10 +124,7 @@ const Tabtwitte = [
 ]
 
 
-
-
 function Home() {
-
 
     const [Tabtwitter, setTabtwitter] = useState([]);
 
@@ -136,9 +132,8 @@ function Home() {
         axios.get('https://my-json-server.typicode.com/amare53/twiterdb/posts')
             .then((response) => { setTabtwitter(response.data) })
             .catch((err) => {
-                console.log(err);
+                console.log(`Error + ${err}`);
             })
-        console.log(Tabtwitter)
     }, [])
 
     return (
@@ -146,8 +141,9 @@ function Home() {
             <Header titrePage='Home' />
             <Publication />
             {
-                (Tabtwitter.map((tab) => <Twitte twitte={tab} />))
+                (Tabtwitter.map((tab, i) => <Twitte twitte={tab} key={i} />))
             }
+
         </div>
     );
 }

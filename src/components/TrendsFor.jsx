@@ -3,7 +3,7 @@ import TrendsforYouSQuid from "./TrendsforYouSQuid"
 export default function TrendsFor() {
     return (
         <>
-            <div className='bg-zinc-400 rounded-xl h-80'>
+            <div className='bg-zinc-400 rounded-xl h-80 px-2 py-2'>
                 <div className=''>
                     <div className='flex justify-between h-3'>
                         <span>Trend for You</span>

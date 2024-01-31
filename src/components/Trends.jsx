@@ -9,7 +9,7 @@ export default function Trends() {
         <>
             <div className='col-span-3' >
                 <div className='fixed h-full w-96 flex flex-col gap-4'>
-                    <div className='bg-zinc-400 flex rounded-xl h-12'>
+                    <div className='bg-zinc-400 flex rounded-xl h-12 px-2 py-2'>
                         <img className='w-6 h-6' src="src/images/Search.svg" alt="icon recherche" />
                         <span>Search twitter</span>
                     </div>
